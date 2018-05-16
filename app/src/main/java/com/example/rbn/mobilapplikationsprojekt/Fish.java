@@ -23,7 +23,11 @@ public class Fish {
             return name;
         }
         public String messageGet() {
-            return name + " is located at: " + location  + "\n" + " and has a height of: " + category + "m";
+            return name + " is " + description + " that is primarily caught in the " +  location  + "\n" + name + " is of the " + category + " family.";
+        }
+
+        public String statsGet() {
+            return "Calories / 100g : " + calories + "\n" + "Price / kg : " + cost;
         }
 
 
