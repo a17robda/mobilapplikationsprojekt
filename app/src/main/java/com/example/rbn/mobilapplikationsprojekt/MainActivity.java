@@ -54,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
             new FetchData().execute();
             return true;
         }
+        if (id == R.id.action_about) {
+            Intent aboutIntent = new Intent(MainActivity.this, aboutActivity.class);
+            startActivity(aboutIntent);
+        }
         return super.onOptionsItemSelected(item);
+
     }
 
     private class FetchData extends AsyncTask<Void,Void,String>{
@@ -136,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-
             try {
                 JSONArray jArr = new JSONArray(o);
                 for (int i = 0; i < jArr.length(); i++) {
@@ -161,9 +165,6 @@ public class MainActivity extends AppCompatActivity {
 
                     String fStats = myFish.statsGet();
                     fishStats.add(fStats);
-
-
-
 
                 }
 

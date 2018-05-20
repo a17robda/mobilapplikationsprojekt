@@ -14,14 +14,8 @@ import android.widget.TextView;
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_fishdetails);
 
-
             TextView viewName = (TextView) findViewById(R.id.txt_name);
             viewName.setText(getIntent().getStringExtra("name"));
-            /*
-            int mH = getIntent().getIntExtra("height", 0);
-            TextView viewHeight = (TextView) findViewById(R.id.txt_height);
-            viewHeight.setText("Height: " + String.valueOf(mH) + "M");
-*/
 
             TextView viewData = (TextView) findViewById(R.id.txt_data);
             viewData.setText(getIntent().getStringExtra("data"));

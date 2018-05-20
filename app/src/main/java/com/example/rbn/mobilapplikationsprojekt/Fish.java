@@ -23,11 +23,11 @@ public class Fish {
             return name;
         }
         public String messageGet() {
-            return name + " is " + description + " that is primarily caught in the " +  location  + "\n" + name + " is of the " + category + " family.";
+            return name + " is " + description + " that is primarily caught in the " +  location + "."  + "\n" + name + " is of the " + category + " family.";
         }
 
         public String statsGet() {
-            return "Calories / 100g : " + calories + "\n" + "Price / kg : " + cost;
+            return "Calories / 100g : " + calories + "Kcal" + "\n" + "Price / kg : " + cost + "SEK";
         }
 
 
