@@ -33,5 +33,16 @@ import android.widget.TextView;
 
 public class aboutActivity extends AppCompatActivity {
 
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about);
+
+        TextView aboutText = (TextView) findViewById(R.id.txt_about);
+        aboutText.setText("TestText");
+    }
+
+
+
 
 }
