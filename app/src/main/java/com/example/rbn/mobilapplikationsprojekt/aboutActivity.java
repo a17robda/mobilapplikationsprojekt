@@ -38,8 +38,10 @@ public class aboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        TextView aboutText = (TextView) findViewById(R.id.txt_about);
-        aboutText.setText("TestText");
+        TextView aboutTitle = (TextView) findViewById(R.id.txt_about);
+        aboutTitle.setText("About");
+        TextView aboutDesc = (TextView) findViewById(R.id.txt_abouter);
+        aboutDesc.setText("Fishapp! is an application for fish enthusiasts over the world looking to gain knowledge about popular seafood.");
     }
 
 

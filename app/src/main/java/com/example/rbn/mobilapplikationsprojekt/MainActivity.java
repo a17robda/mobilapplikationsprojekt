@@ -131,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
             listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                   // Toast.makeText(MainActivity.this, fishData.get(i), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, FishDetailsActivity.class);
                     intent.putExtra("data", fishData.get(i));
                     intent.putExtra("name", fishList.get(i));

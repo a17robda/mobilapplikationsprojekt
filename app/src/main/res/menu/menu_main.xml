@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brom.listviewjsonapp.MainActivity">
+    tools:context="com.example.rbn.mobilapplikationsprojekt.MainActivity">
     <item
         android:id="@+id/action_refresh"
         android:orderInCategory="10"
